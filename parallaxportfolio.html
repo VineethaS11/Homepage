@@ -13,44 +13,40 @@
 </head>
 
 <body>
-  <header>
-  <div class="topnav" id="myTopnav">
-    <img src="https://i.imgur.com/m21n27i.png">
-    <div class="dropdown">
-      <button class="dropbtn">HOME
+    <nav>
+  <div id="logo"><img src="https://i.imgur.com/m21n27i.png"></div>
 
-      </button>
-      <div class="dropdown-content">
-        <a href="#">IMAGE</a>
-        <a href="#">YOUTUBE VIDEO</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">PORTFOLIO
-      </button>
-      <div class="dropdown-content">
-        <a href="#">HORIZONTAL</a>
-        <a href="#">VERTICAL</a>
-        <a href="#">PARALLAX</a>
-        <a href="#">SINGLE</a>
-      </div>
-    </div>
-    <a href="#home">ABOUT US</a>
-    <a href="#news">SERVICES</a>
-    <a href="#contact">CONTACT US</a>
-    <a href="#about">BLOG</a>
-    <div class="dropdown">
-      <button class="dropbtn">PAGES
-      </button>
-      <div class="dropdown-content">
-        <a href="#">TEAM SINGLE</a>
-        <a href="#">TEAM</a>
-        <a href="#">BLOG PARALLAX</a>
-      </div>
-    </div>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-  </header>
+  <label for="drop" class="toggle">MENU</label>
+  <input type="checkbox" id="drop" />
+      <ul class="menu">
+          <li><a href="#">HOME</a></li>
+          <li>
+              <label for="drop-1" class="toggle">PORTFOLIO</label>
+              <a href="#">PORTFOLIO</a>
+              <input type="checkbox" id="drop-1"/>
+              <ul>
+                  <li><a href="#">HORIZONTAL</a></li>
+                  <li><a href="#">VERTICAL</a></li>
+                  <li><a href="#">PARALLAX</a></li>
+                  <li><a href="#">SINGLE</a></li>
+              </ul>
+          </li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">BLOG</a></li>
+          <li>
+          <label for="drop-2" class="toggle">PAGES</label>
+          <a href="#">PAGES</a>
+          <input type="checkbox" id="drop-2"/>
+          <ul>
+              <li><a href="#">TEAM</a></li>
+              <li><a href="#">TEAM SINGLE</a></li>
+              <li><a href="#">BLOG PARALLAX</a></li>
+          </ul>
+          </li>
+       </ul>
+  </nav>
 
   <div class="container">
     <h1>OUR WORKS <strong>PARALLAX</strong></h1>
@@ -147,14 +143,6 @@
 </footer>
 
 <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
 function myFunction() {
     var x = document.getElementById("myFooter");
     if (x.className === "footer") {
