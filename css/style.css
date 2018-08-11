@@ -6,9 +6,6 @@ body {
 }
 /*NAVIGATION LINKS*/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-
 .toggle,
 [id^=drop] {
 	display: none;
